@@ -1,6 +1,7 @@
 # Kulaan
 
-![Alt text](../../../../../../../C:/Users/burha/OneDrive/Documents/GitHub/Kulaan/kulaanscrnshot.png)
+
+![kulaanscrnshot](https://user-images.githubusercontent.com/113322000/201457541-fb094a50-f7ee-4b7c-b1a0-a5818a9f8be5.png)
 
 There is a 2015 study that found that the average net worth of a black family in Boston is $8 compared to $247,000 for the average white family in the city of Boston.
  
