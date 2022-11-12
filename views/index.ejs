@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kulaan</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="kulan">Kulaan</h1>
+  <section class="top">
+    <p class="para">This application will allow you to post black businesses based on location and help others navigate to further support and strengthen the black business community</p>
+
+  </section>
+  <div class="row">
+
+    <form action="/saveCompanyInfo" method="post">
+        <div class="form-group">
+            <label>Name of Black-Owned Business</label>
+            <input type="text" class="form-control" name="businessname">
+        </div>
+        <div class="form-group">
+          <label>Location</label>
+          <input type="text" class="form-control" name="location">
+      </div>
+
+        <div class="form-group">
+            <label>Services Provided</label>
+            <input type="text" class="form-control" name="services">
+        </div>
+        <div class="form-group">
+            <label>Comments</label>
+            <input type="text" class="form-control" name="comments">
+        </div>
+        <div class="form-group">
+
+        <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+    </form>
+
+  <ul class="company">
+  <% for(var i=0; i<companyInfo.length; i++) {%>
+    <li class="companyArray">
+      <span><%= companyInfo[i].businessName %></span>,
+      <span><%= companyInfo[i].addLocation %></span>,
+      <span><%= companyInfo[i].servicesProvided %></span>,
+      <span><%= companyInfo[i].addComments %></span> 
+      <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
+
+
+
+
